@@ -15,12 +15,8 @@
                    <h4 class="mb-0">@product.Title</h4>
                </a>
                <p>@product.Description</p>
-               @if (product.OriginalPrice > product.Price)
-              {
-                  <h6 class="text-muted original-price">@product.OriginalPrice</h6>
-              }
               <h5 class="price">
-                  $@product.Price
+                  @GetPriceText(product)
               </h5>
            </div>
        </li>
@@ -28,9 +24,6 @@
 </ul>
 
 @code {
-
-    //[Parameter]
-    //public int? CategoryId { get; set; } = null;
 
     protected override void OnInitialized()
     {
@@ -41,5 +34,20 @@
     public void Dispose()
     {
         ProductService.OnChange -= StateHasChanged;
+    }
+
+    private string GetPriceText(Product product)
+    {
+        var variant = product.Variants;
+        if(variant.Count == 0)
+        {
+            return string.Empty;
+        }
+        else if (variant.Count == 1)
+        {
+            return $"${variant[0].Price}";
+        }
+        decimal minPrice = variant.Min(v => v.Price);
+        return $"Starting at ${minPrice}";
     }
 }
