@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazingShop.Server", "Server\BlazingShop.Server.csproj", "{98EA7126-0318-4495-A111-76B5C24DF025}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingShop.Server", "Server\BlazingShop.Server.csproj", "{98EA7126-0318-4495-A111-76B5C24DF025}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazingShop.Client", "Client\BlazingShop.Client.csproj", "{916FE42B-20CA-455A-BE30-5A4C5CD5CD38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingShop.Client", "Client\BlazingShop.Client.csproj", "{916FE42B-20CA-455A-BE30-5A4C5CD5CD38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazingShop.Shared", "Shared\BlazingShop.Shared.csproj", "{3A4AF001-B43F-4065-8B0F-3579D06974B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingShop.Shared", "Shared\BlazingShop.Shared.csproj", "{3A4AF001-B43F-4065-8B0F-3579D06974B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
